@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>6.7 애니메이션 속성으로 전환 효과 제어하기 </title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name : bgChange; 
+                animation-duration : 5s ;
+                /*animation-delay: 2s;*/
+                animation-fill-mode:forwards ;
+                animation-iteration-count: 2;
+                animation-direction: alternate-reverse;
+                
+            }
+
+            .box :hover{
+                animation-play-state: paused;
+            }
+            @keyframes bgChange{
+                0%{
+                    background-color: blue;
+                }
+                25%{
+                    background-color: pink;
+                }
+                50%{
+                    background-color: orange;
+                }
+                75%{
+                    background-color: red;
+                }
+                100%{
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        
+    </body>
+</html>

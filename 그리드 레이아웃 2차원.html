@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>7.2 그리드 레이아웃 설계</title>
+        <style>
+        .container{
+            color:white;
+            background-color: gray;
+            padding: 1rem;
+            height: 400px;
+        
+            display: grid;
+            grid-template-areas: 
+                'A C'
+                'D B';
+            /* grid-template-columns: repeat(2,minmax(100px,1fr));
+            grid-template-rows: repeat(2,minmax(100px,1fr)); */
+            row-gap: 1rem;
+            column-gap: 1rem;
+
+            /* align-items: stretch;
+            justify-items: start;
+            place-items: end start; */
+        
+        }
+
+        .box{
+            background-color: red;
+            grid-area: A;
+        }
+        .box:nth-child(2){
+            background-color: orange;
+            grid-area: B;
+        }
+        .box:nth-child(3){
+            background-color: green;
+            grid-area: C;
+        }
+        .box:nth-child(4){
+            background-color: blue;
+            grid-area: D;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="box">A</div>    
+            <div class="box">B</div>    
+            <div class="box">C</div>    
+            <div class="box">D</div>    
+        </div>
+    </body>
+
+    
+</html>
