@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>박스 모델을 구성하는 속성</title>
+        <!-- margin 이 곂칠경우 큰거를 따라간다. -->
+        <style>
+            .block-1 {
+            border-bottom: 1px solid red ;
+            border-top: 3px solid blue;
+            margin-bottom: 50px;
+
+            }
+            .block-2{
+                border :1px solid red;
+                padding:40px 60px;
+                margin-top: 30px;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                display: block; 
+                
+            }
+            .inline-1{
+                margin:100px;
+                display: inline;
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "block-1"> block-1</p>
+        <p class = "block-2"> block-2</p>
+        <span class="inline-1">inline-1 </span>
+        <span class="inline-2">inline-2 </span>
+    </body>
+</html>

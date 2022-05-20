@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scope</title>
+    </head>
+    <body>
+        <table border="1">
+            <caption>
+                가격표 
+            </caption>
+            
+            <col style="width:80px"/>
+            <colgroup span="2" style="width: 150px;"></colgroup>
+            <col style="width: 80px;"
+            
+            
+            
+            <!--  tr 행 -->
+            
+            <thead>
+                <tr>
+                    <!-- th 강조느낌 열 -->
+                    <th scope="col">번호</th>
+                    <th scope="col">상품명</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">가격</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td> 총금액</td>
+                    <td colspan="3">2,500원</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <!-- th 일반 데이터 느낌열 -->
+                    <td scope="row">1</td>
+                    <td>콜라</td>
+                    <td>1개</td>
+                    <td>1,500원</td>
+                </tr>
+                
+                <tr>
+                    <!-- th 일반 데이터 느낌열 -->
+                    <td>2</td>
+                    <td>사이다</td>
+                    <td>2개</td>
+                    <td rowspan="2">3,000원</td>
+                </tr>
+                
+                <tr>
+                    <!-- th 일반 데이터 느낌열 -->
+                    <td>3</td>
+                    <td>탄산수</td>
+                    <td>3개</td>
+                
+                </tr>
+            </tbody>
+            
+        </table>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS 선택자 다루기 </title>
+        <style>
+            [class="red"]{
+                color:blue;
+            }
+            dt{
+                color:red;
+            }
+            h1 , p{
+                color: gray;
+            }
+            .box h1{
+                color:violet;
+            }
+            /* h2 인접한거 스타일 */
+            h2 + h3{
+                color:white;
+
+            }
+            /* h2 다음 h3  스타일 */
+            h2 ~ h3{
+                color:aliceblue
+            }
+            a::after{
+                content : "test"
+            }
+            a:visited{
+                color: red;
+
+            }
+            /* 마우스 누른후 이벤트*/
+            a:hover{
+                color:azure;
+            }
+        </style>
+    </head>
+
+<!-- 아이디는 유니크 해야하고 클래스는 중복이 가능하다 -->
+    <body>
+        <div class="box">
+            <h1>h1 tag</h1>
+        </div>
+        <h1 >h1 tag</h1>
+        <p class="red">p tag</p>
+        <h1 >h1 tag</h1>
+        <dl>CSS</dl>
+        <dt> CSS는 Cascading style sheets 의 약자입니다 </dt>
+    </body>
+</html>
