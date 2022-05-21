@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>노드 추가/삭제</title>
+    </head>
+    <body>
+        <h1>text</h1>
+        <script>
+            const aEl = document.createElement("a");
+            const textNode =document.createTextNode("링크");
+            const hrefAttr = document.createAttribute("href");
+
+            hrefAttr.value = "https://www.gitbut.co.kr";
+            aEl.setAttributeNode(hrefAttr);
+            aEl.appendChild(textNode);
+            document.body.appendChild(aEl);
+            
+            const hE1 = document.querySelector("h1");
+            hE1.parentNode.removeChild(hE1);
+
+            const pE1=document.querySelectorAll("p");
+            pE1.forEach((e1)=> {
+                el.parentNode.removeChild(el);
+            })
+
+
+            const childNodes = document.body.childNodes;
+            childNodes.forEach((node)=>{
+                console.log(childNodes);
+                if (node.nodeName==='p'){
+                    node.parentNode.removeChild(node);
+                }
+            });
+            console.log(childNodes);
+
+
+        </script>
+    </body>
+</html>

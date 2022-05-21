@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>인라인 이벤트 </title>
+    </head>
+    <body>
+        <button onclick="clickEvent()"> 클릭1</button>
+        <button ondblclick="clickEvent()"> 클릭2</button>
+        <button onmouseover="clickEvent()"> 클릭3</button>
+
+        <input type="text" onkeydown="keyEvent()">
+
+        <script>
+            function clickEvent(){
+                alert("click");
+            }
+            function keyEvent(){
+                alert("key click");
+            }
+            const btnE1 = document.querySelector('button');
+            btnE1.onclick=function(){
+                console.log('click event ');
+            }
+            const inputEl =document.querySelector('input');
+            inputEl.onfocus = function(){
+                console.log('asdasd');
+            }
+            
+        </script>
+    </body>
+</html>

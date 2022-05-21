@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우팝업</title>
+</head>
+<body>
+    <button onclick="popup()">팝업</button>
+    <script>
+        function popup(){
+            window.open('위치속성.html','팝업','width=1200,height=1100,left=1400,top=1100')
+        }
+    </script>
+
+    <button onclick="sTo()"> scroolTo </button>
+    <button onclick="sBy()"> scroolBy </button>
+
+    <script>
+        function sTo(){
+            window.scrollTo(800,1000);
+
+        }
+        function sBy(){
+            window.scrollBy(800,1000);
+        }
+    </script>
+
+</body>
+</html>

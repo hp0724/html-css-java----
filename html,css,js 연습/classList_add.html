@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classlist</title>
+        <style>
+            .styleSet1 {
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p id ="text">text</p>
+        <script>
+            const pE1=document.querySelector("#text");
+            setInterval(()=>{
+                pE1.classList.toggle("styleSet1");
+            },1000);
+            pE1.classList.add('styleSet1')
+            pE1.classList.remove('styleSet1')
+        </script>
+    </body>
+</html>
